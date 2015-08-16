@@ -11,14 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150816131541) do
+ActiveRecord::Schema.define(version: 20150816140913) do
 
   create_table "books", force: true do |t|
     t.string   "name"
     t.string   "author"
     t.text     "description"
     t.integer  "price"
-    t.boolean  "availability"
+    t.boolean  "availability", default: true
     t.datetime "created_at"
     t.datetime "updated_at"
   end
