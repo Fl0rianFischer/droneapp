@@ -18,7 +18,7 @@
         <li><%= link_to "Dronepilots", "#" %><li>
         <% if current_user %>
           <li><%= link_to "Settings", edit_user_registration_path %></li>
-          <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %>
         <% else %>
           <li><%= link_to "Login", new_user_session_path %></li>
         <% end %>
